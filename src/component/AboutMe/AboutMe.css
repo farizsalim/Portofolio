@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #FF6F61; /* Brighter Coral for energy */
+    --dark-color: #2D2D2D; /* Charcoal for stronger contrast */
+    --light-color: #F8F8F8; /* Softer light gray for clean background */
+    --bg-color: #FFFFFF; /* White for sections */
+    --hover-color: #E64A19; /* A vibrant red-orange for hover */
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+}
+
+.about-me {
+    padding: 4rem 2rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-titles {
+    font-size: 2.8rem; /* Larger font size for a more prominent title */
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 2.5rem; /* Added more space for visual balance */
+}
+
+.certifications {
+    margin-top: 2.5rem;
+}
+
+.certifications-title {
+    font-size: 2rem; /* Increased title size for more emphasis */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.certification-item {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-item:hover {
+    transform: translateY(-10px); /* Subtle hover effect for interactivity */
+}
+
+.certification-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); /* Use the primary color for titles */
+}
+
+.certification-date {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+
+.certification-item p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--dark-color); /* Ensure good readability */
+}
+
+.certificate-link {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.certificate-link:hover {
+    color: var(--hover-color);
+    transform: translateX(5px); /* Slight hover effect for certificate links */
+}
+
+@media (max-width: 768px) {
+    .summary {
+        padding: 1.8rem;
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .certification-item {
+        padding: 1.5rem;
+    }
+
+    .certifications {
+        margin-top: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem; /* Smaller section title on mobile */
+    }
+}

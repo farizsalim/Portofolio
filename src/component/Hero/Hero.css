@@ -1,0 +1,169 @@
+.hero {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.photo-container {
+    flex-shrink: 0;
+}
+
+.myPhoto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myPhoto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    max-width: 600px;
+    color: #ffffff;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.greeting {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.handle {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: #fdcb6e;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.button-work {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.button-work:hover {
+    background: #74b9ff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Hover Effect on Button: */
+.button-work:active {
+    transform: translateY(2px);
+}
+
+/* Fade-in animation for hero section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling the summary */
+.summary {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.summary p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .greeting {
+        font-size: 3.5rem;
+    }
+    
+    .handle {
+        font-size: 1.6rem;
+    }
+    
+    .myPhoto {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .button-work {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+    /* Adjust summary font size and layout for smaller screens */
+    .summary p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 2.5rem;
+    }
+    
+    .handle {
+        font-size: 1.3rem;
+    }
+    
+    .myPhoto {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .button-work {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

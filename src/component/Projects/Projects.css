@@ -1,0 +1,141 @@
+.projects {
+    padding: 6rem 0;
+    background-color: #2d3436; /* Latar belakang gelap */
+    color: #fff; /* Teks putih agar kontras dengan latar belakang gelap */
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff; /* Teks judul putih */
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.project-item {
+    background-color: #ffffff; /* Card berwarna putih */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    border: 2px solid #f1f1f1;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-date {
+    font-size: 1rem;
+    color: #888;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    flex-grow: 1; /* Membuat deskripsi mengisi ruang kosong */
+}
+
+.project-tools {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.link-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: #e67e22; /* Warna jingga */
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 140px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.link-btn:hover {
+    background-color: #d35400; /* Warna jingga lebih gelap saat hover */
+}
+
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2.5rem;
+    }
+
+    .project-item {
+        min-height: 300px;
+    }
+
+    .link-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+        min-width: 120px;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .link-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        min-width: 100px;
+    }
+
+    .project-item {
+        min-height: 320px;
+    }
+}

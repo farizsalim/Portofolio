@@ -1,0 +1,72 @@
+.technical-skills {
+    padding: 6rem 0;
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .skills-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted width */
+    gap: 2rem;
+    justify-items: center;
+    align-items: start; /* Ensure content starts from the top */
+    padding: 0 2rem;
+  }
+  
+  .skill-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: left;
+    color: #333;
+    width: 100%;
+    max-width: 320px;  /* Fixed max width for consistency */
+    min-height: 300px; /* Set a minimum height to make the cards uniform */
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill-icon {
+    font-size: 3rem;
+    color: #ff7f50;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid {
+      padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .skill-item {
+      min-height: 280px; /* Smaller minimum height for mobile */
+    }
+  }
+  
