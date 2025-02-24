@@ -139,3 +139,25 @@
         min-height: 320px;
     }
 }
+
+.project-thumbnail {
+    margin-bottom: 10px;
+  }
+  
+  .project-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .project-item {
+    margin-bottom: 30px;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

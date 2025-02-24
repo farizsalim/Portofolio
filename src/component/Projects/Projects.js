@@ -1,4 +1,8 @@
 import './Projects.css';
+import project1 from "./../../media/project1.png"
+import selfhealing from '../../media/selfhealing.png'
+import menthy from '../../media/menthy.png'
+import studicase from '../../media/Studicase.png'
 
 const projects = [
   {
@@ -7,10 +11,11 @@ const projects = [
     description: 'Website to Read Comic and Novel',
     tools: ['React.JS', 'MongoDB', 'CSS', 'Express JS', 'Node JS'],
     links: {
-      frontend: 'https://frontend-link.com',
-      backend: 'https://backend-link.com',
-      demo: 'https://demo-link.com'
-    }
+      frontend: 'https://github.com/farizsalim/Frontend-Readdream',
+      backend: 'https://github.com/farizsalim/Backend-Readdream',
+      demo: 'https://frontend-readdream.vercel.app/'
+    },
+    thumbnail: project1
   },
   {
     name: 'APK Readdream',
@@ -18,8 +23,9 @@ const projects = [
     description: 'Android Application for Reading Comics',
     tools: ['Android Studio', 'Firebase Google'],
     links: {
-      portfolio: 'https://portfolio-link.com'
-    }
+      portfolio: 'https://github.com/farizsalim/Android-Project-Readdream'
+    },
+    thumbnail: 'https://link-to-thumbnail.com/apk-readdream-thumbnail.jpg'
   },
   {
     name: 'SelfHealing',
@@ -27,8 +33,9 @@ const projects = [
     description: 'Website to Support Mental Health',
     tools: ['ReactJS', 'MySQL', 'Express JS', 'Node JS', 'Figma'],
     links: {
-      portfolio: 'https://portfolio-link.com'
-    }
+      portfolio: 'https://github.com/farizsalim/SelfHealing-MassiveProject-Group3Tawanan'
+    },
+    thumbnail: selfhealing
   },
   {
     name: 'Menthy',
@@ -36,8 +43,9 @@ const projects = [
     description: 'Website to Support Mental Health',
     tools: ['ReactJS', 'MySQL', 'Express JS', 'Node JS', 'Figma'],
     links: {
-      portfolio: 'https://portfolio-link.com'
-    }
+      portfolio: 'https://github.com/farizsalim/Menthy-Macro-Project'
+    },
+    thumbnail: menthy
   },
   {
     name: 'F&D',
@@ -45,10 +53,11 @@ const projects = [
     description: 'Case Study Website for Eduwork Food and Beverage E-commerce',
     tools: ['ReactJS', 'MongoDB', 'Express JS', 'Node JS', 'CSS'],
     links: {
-      frontend: 'https://frontend-link.com',
-      backend: 'https://backend-link.com',
-      demo: 'https://demo-link.com'
-    }
+      frontend: 'https://github.com/farizsalim/Studi-Kasus-Frontend',
+      backend: 'https://github.com/farizsalim/Studi-Kasus-Backend',
+      demo: 'https://studi-kasus-frontend.vercel.app/'
+    },
+    thumbnail: studicase
   }
 ];
 
@@ -59,6 +68,10 @@ const Projects = () => (
       <div className="projects-list">
         {projects.map((project, index) => (
           <div key={index} className="project-item">
+            {/* Thumbnail Image */}
+            <div className="project-thumbnail">
+              <img src={project.thumbnail} alt={`${project.name} Thumbnail`} />
+            </div>
             <div className="project-header">
               <h3 className="project-name">{project.name}</h3>
               <span className="project-date">{project.date}</span>
