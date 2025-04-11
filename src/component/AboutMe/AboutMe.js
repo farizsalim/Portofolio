@@ -25,7 +25,7 @@ const AboutMe = () => {
             <p>
               Learning MongoDB as a NoSQL database to store data for websites, allowing flexible data storage formats and good scalability for web-based applications.
             </p>
-            <a href="https://link-to-certificate.com" className="certificate-link">Link to Certificate</a>
+            <a href="https://drive.google.com/file/d/10qEdTj9yzLY7S7sHvEzjAJ49P61j1ho4/view?usp=sharing" className="certificate-link">Link to Certificate</a>
           </div>
 
           {/* Infinite Learning Section */}
@@ -41,7 +41,7 @@ const AboutMe = () => {
             <p>
               Studied Frontend Programming using React JS, implementing UI/UX designs and ensuring the interactivity and responsiveness of the website.
             </p>
-            <a href="https://link-to-certificate.com" className="certificate-link">Link to Certificate</a>
+            <a href="https://drive.google.com/file/d/1dtge9j-M0wl3GIhU6mJLzu2SiIlJAYgE/view?usp=sharing" className="certificate-link">Link to Certificate</a>
           </div>
         </div>
       </div>
