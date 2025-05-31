@@ -3,8 +3,20 @@ import project1 from "./../../media/project1.png"
 import selfhealing from '../../media/selfhealing.png'
 import menthy from '../../media/menthy.png'
 import studicase from '../../media/Studicase.png'
+import dekoor from '../../media/dekoor.png'
 
 const projects = [
+  {
+    name: 'Dekoor Furniture Website',
+    date: '21 May 2025',
+    description: 'Intern Frontend test from Sekawan Media',
+    tools: ['ReactJS', 'MongoDB', 'Express JS', 'Node JS', 'Tailwind CSS'],
+    links: {
+      frontend: 'https://github.com/farizsalim/SkwnFrontendDev-1-AchmadFarizSalim',
+      demo: 'https://skwn-frontend-dev-1-achmad-fariz-salim.vercel.app/'
+    },
+    thumbnail: dekoor
+  },
   {
     name: 'Website Readdream',
     date: 'Sep 2023 - Oct 2023',
@@ -49,7 +61,7 @@ const projects = [
   },
   {
     name: 'F&D',
-    date: 'N/A',
+    date: 'Nov 2024 - Dec 2024',
     description: 'Case Study Website for Eduwork Food and Beverage E-commerce',
     tools: ['ReactJS', 'MongoDB', 'Express JS', 'Node JS', 'CSS'],
     links: {
